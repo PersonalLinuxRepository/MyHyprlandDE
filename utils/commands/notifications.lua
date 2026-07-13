@@ -14,7 +14,11 @@ function notification.togglePanel()
 end
 
 function notification.toggleDoNotDisturb()
-    return command.exec("swaync-client --toggle-dnd && swaync-client --get-dnd | grep -q 'true' && notify-send 'Silenced notifications' || notify-send 'Enabled notifications'")
+    return command.exec(
+        "swaync-client --toggle-dnd && " ..
+        "swaync-client --get-dnd | grep -q 'true' && " ..
+        "notify-send 'Silenced notifications' || " ..
+        "notify-send 'Enabled notifications'")
 end
 
 return notification
