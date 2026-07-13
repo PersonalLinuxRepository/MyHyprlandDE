@@ -5,12 +5,9 @@ local focus = require("utils.views.focus")
 
 local system = require("utils.commands.system")
 local screenshot = require("utils.commands.screenshoot")
-local media = require("utils.commands.media")
-local screen = require("utils.commands.screen")
-local notification = require("utils.commands.notifications")
-
 
 local hyprshot = os.getenv("HOME") .. "/.local/bin/hyprshot"
+
 local superKey = "SUPER" -- Sets "Windows" key as main modifier
 local shiftKey = "SHIFT"
 local alt_l = "Alt_L"
@@ -57,25 +54,6 @@ hl.bind(superKey .. " + mouse:272", window.windowDrag(), { mouse = true })
 hl.bind(superKey .. " + mouse:273", window.windowResize(), { mouse = true })
 
 
--- Laptop multimedia keys for volume and LCD brightness
-hl.bind("XF86AudioRaiseVolume", media.raiseVolume(), { locked = true, repeating = true })
-hl.bind("XF86AudioLowerVolume", media.lowerVolume(),  { locked = true, repeating = true })
-hl.bind("XF86AudioMute",        media.setMuteVolume(), { locked = true, repeating = true })
-hl.bind("XF86AudioMicMute",     media.toggleMuteMic(),  { locked = true, repeating = true })
-hl.bind("XF86MonBrightnessUp",  screen.increaseBrightness(),{ locked = true, repeating = true })
-hl.bind("XF86MonBrightnessDown",screen.decreaseBrightness(),{ locked = true, repeating = true })
-
--- Requires playerctl
-hl.bind("XF86AudioNext",  media.nextMediaTrack(),{ locked = true })
-hl.bind("XF86AudioPause", media.playPauseMedia(), { locked = true })
-hl.bind("XF86AudioPlay",  media.playTrack(), { locked = true })
-hl.bind("XF86AudioPrev",  media.previousMediaTrack(),{ locked = true })
-
--- Notifications (swaync)
-hl.bind("SUPER + COMMA", notification.closeLatest(), { description = "Dismiss last notification" })
-hl.bind("SUPER + SHIFT + COMMA", notification.closeAll(), { description = "Dismiss all notifications" })
-hl.bind("SUPER + CTRL + COMMA", notification.togglePanel(), { description = "Open notifications panel" })
-hl.bind("SUPER + ALT + COMMA", notification.toggleDoNotDisturb(), { description = "Shut up and don't disturb me, pls" })
 
 
 

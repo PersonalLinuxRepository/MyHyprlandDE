@@ -9,7 +9,9 @@ local animations = require("settings.views.animations")
 local curves = require("settings.views.curves")
 local misc = require("settings.views.misc")
 
-local bindings = require("bindings.keyBindings") 
+local bindings = require("bindings.generalKey") 
+local mediaBindings = require("bindings.media")
+local notificationBindings = require("bindings.notification")
 
 -- See https://wiki.hypr.land/Configuring/Basics/Autostart/
 
