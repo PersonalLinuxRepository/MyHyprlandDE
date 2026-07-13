@@ -1,3 +1,6 @@
+local workspace = require("utils.workspace")
+local window = require("utils.window")  
+
 local hyprshot = os.getenv("HOME") .. "/.local/bin/hyprshot"
 local superKey = "SUPER" -- Sets "Windows" key as main modifier
 local shiftKey = "SHIFT"
@@ -27,7 +30,7 @@ hl.bind(superKey .. "+ X", function ()
     hl.dispatch(hl.dsp.window.move({
         workspace = "special:minimized",
         follow = false
-    }))
+    })) 
 end)
 
 hl.bind(superKey .. " + Tab", function()
@@ -51,7 +54,7 @@ hl.bind(superKey .. " + down",  hl.dsp.focus({ direction = "down" }))
 -- Switch workspaces with superKey + [0-9]
 -- Move active window to a workspace with superKey + SHIFT + [0-9]
 for i = 1, 10 do
-    local key = i % 10 -- 10 maps to key 0
+    local key = i % 10 -- 10 maps to key 10
     hl.bind(superKey .. " + " .. key,             hl.dsp.focus({ workspace = i}))
     hl.bind(superKey .. " + SHIFT + " .. key,     hl.dsp.window.move({ workspace = i }))
 end
