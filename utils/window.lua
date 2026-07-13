@@ -5,7 +5,7 @@ function window.getActiveWindow()
     return hl.get_active_window()
 end
 
-function window.MinimizationWindow(window)
+function window.HideWindow(window)
     hl.dispatch(hl.dsp.window.tag({
         tag = "minimized",
         window = window.getActiveWindow()
