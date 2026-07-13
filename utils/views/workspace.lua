@@ -20,4 +20,8 @@ function workspace.previousWorkspace()
     return hl.dsp.focus({ workspace = "e-1" })
 end
 
+function workspace.addNewWorkspace(number)
+    return hl.dsp.focus({ workspace = number })
+end
+
 return workspace
