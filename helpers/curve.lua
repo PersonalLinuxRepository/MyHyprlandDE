@@ -1,4 +1,4 @@
-local curve = {}
+curve = {}
 
 function curve.bezier(name, points)
     hl.curve(name, {

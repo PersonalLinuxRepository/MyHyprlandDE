@@ -1,4 +1,4 @@
-local workspace = {}
+workspace = {}
 
 function workspace.getActiveWorkspace()
     return hl.get_active_workspace()

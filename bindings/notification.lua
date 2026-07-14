@@ -1,4 +1,4 @@
-local notification = require("utils.commands.notifications")
+notification = require("utils.commands.notifications")
 
 -- Notifications (swaync)
 hl.bind("SUPER + COMMA", notification.closeLatest(), { description = "Dismiss last notification" })

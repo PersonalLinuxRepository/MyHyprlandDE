@@ -1,6 +1,6 @@
 curves = require("settings.behavior.curves")
 animations = require("settings.behavior.animations")
-command = require("utils.commands.command")
+command = require("utils.commands.system")
 monitors = require("settings.hardware.monitors")
 mouse = require("settings.hardware.mouse")
 keyboard = require("settings.hardware.keyboard")
@@ -19,11 +19,10 @@ notificationBindings = require("bindings.notification")
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function ()
-   command.exec("waybar")
-   command.exec("hyprpaper")
-   command.exec("nm-applet")
-   command.exec("sway")
-   command.exec("kitty")
+   hl.exec_cmd("waybar")
+   hl.exec_cmd("hyprpaper")
+   hl.exec_cmd("kitty")
+   hl.exec_cmd("nm-applet")
 end)
 
 

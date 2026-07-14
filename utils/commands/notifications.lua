@@ -1,5 +1,5 @@
-local command= require("utils.commands.command")
-local notification = {}
+command= require("utils.commands.command")
+notification = {}
 
 function notification.closeLatest()
     return command.exec("swaync-client --close-latest")

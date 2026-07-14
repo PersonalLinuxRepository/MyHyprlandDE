@@ -1,5 +1,5 @@
-local media = require("utils.commands.media")
-local screen = require("utils.commands.screen")
+media = require("utils.commands.media")
+screen = require("utils.commands.screen")
 
 -- Laptop multimedia keys for volume and LCD brightness
 hl.bind("XF86AudioRaiseVolume", media.raiseVolume(), { locked = true, repeating = true })
