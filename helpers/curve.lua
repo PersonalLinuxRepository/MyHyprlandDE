@@ -9,11 +9,11 @@ end
 
 
 function curve.spring(name, config)
-    hl.curve(name, {
-        type = "spring",
-        mass = config.mass,
-        stiffness = config.stiffness,
-        dampening = config.dampening
+   return hl.curve(name, {
+          type = "spring",
+          mass = config.mass,
+          stiffness = config.stiffness,
+          dampening = config.dampening
     })
 end
 
