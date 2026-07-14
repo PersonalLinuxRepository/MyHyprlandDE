@@ -1,19 +1,19 @@
 local curve = {}
 
 function curve.bezier(name, points)
-   return hl.curve(name, {
-          type = "bezier",
-          points = points
+    hl.curve(name, {
+       type = "bezier",
+       points = points
     })
 end
 
 
 function curve.spring(name, config)
-   return hl.curve(name, {
-          type = "spring",
-          mass = config.mass,
-          stiffness = config.stiffness,
-          dampening = config.dampening
+    hl.curve(name, {
+       type = "spring",
+       mass = config.mass,
+       stiffness = config.stiffness,
+       dampening = config.dampening
     })
 end
 
