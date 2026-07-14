@@ -1,9 +1,9 @@
 local curve = {}
 
 function curve.bezier(name, points)
-    hl.curve(name, {
-        type = "bezier",
-        points = points
+   return hl.curve(name, {
+          type = "bezier",
+          points = points
     })
 end
 
