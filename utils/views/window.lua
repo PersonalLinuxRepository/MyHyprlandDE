@@ -1,5 +1,5 @@
-local workspace = require("utils.views.workspace")
-local window = {}
+workspace = require("utils.views.workspace")
+window = {}
 
 function window.getActiveWindow()
     return hl.get_active_window()

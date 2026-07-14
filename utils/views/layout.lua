@@ -1,4 +1,4 @@
-local layout = {}
+layout = {}
 
 function layout.toggleSplit()
     return hl.dsp.layout("togglesplit")

@@ -1,5 +1,5 @@
-local command = require("utils.commands.command")
-local screenshot = {}
+command = require("utils.commands.command")
+screenshot = {}
 
 function screenshot.saveScreenshot()
     return command.exec("[[bash -c 'grim ~/Изображения/Screenshot-$(date +%Y-%m-%d_%H-%M-%S).png']]")

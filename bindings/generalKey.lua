@@ -1,26 +1,24 @@
-local layout = require("utils.views.layout")
-local workspace = require("utils.views.workspace")
-local window = require("utils.views.window")  
-local focus = require("utils.views.focus")
+layout = require("utils.views.layout")
+workspace = require("utils.views.workspace")
+window = require("utils.views.window")  
+focus = require("utils.views.focus")
+system = require("utils.commands.system")
+screenshot = require("utils.commands.screenshoot")
 
-local system = require("utils.commands.system")
-local screenshot = require("utils.commands.screenshoot")
+hyprshot = os.getenv("HOME") .. "/.local/bin/hyprshot"
 
-local hyprshot = os.getenv("HOME") .. "/.local/bin/hyprshot"
-
-local superKey = "SUPER" -- Sets "Windows" key as main modifier
-local shiftKey = "SHIFT"
-local alt_l = "Alt_L"
+superKey = "SUPER" -- Sets "Windows" key as main modifier
+shiftKey = "SHIFT"
+alt_l = "Alt_L"
 
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
+closeWindowBind = hl.bind(alt_l .. "+F4", window.windowClose())
+closeWindowBind:set_enabled(true)
+
 hl.bind("F1", system.launchTerminal())
 hl.bind("Print", screenshot.saveScreenshotToClipboard())
 hl.bind(shiftKey .. "+ Print" , screenshot.saveScreenshot()) 
-
-local closeWindowBind = hl.bind(alt_l .. "+F4", window.windowClose())
-closeWindowBind:set_enabled(true)
-
 hl.bind(superKey .. " + M", system.closeHyprlandSession())
 hl.bind(superKey .. " + E", system.launchFileManager())
 hl.bind(superKey .. " + R", system.launchMenu())

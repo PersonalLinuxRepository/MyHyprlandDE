@@ -1,5 +1,5 @@
-local command = require("utils.commands.command")
-local media = {}
+command = require("utils.commands.command")
+media = {}
 
 function media.raiseVolume()
     return command.exec("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+")

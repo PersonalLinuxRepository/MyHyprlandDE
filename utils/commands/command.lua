@@ -1,7 +1,7 @@
-local command = {}
+command = {}
 
 function command.exec(cmd)
-    return hl.dsp.exec_cmd(cmd)
+  return hl.dsp.exec_cmd(cmd)
 end
 
 return command
