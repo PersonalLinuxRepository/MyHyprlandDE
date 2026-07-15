@@ -1,0 +1,9 @@
+[Unit]
+Description=Sway Notification Daemon
+
+[Service]
+ExecStart=/usr/bin/swaync
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target

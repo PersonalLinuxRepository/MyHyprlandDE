@@ -1,0 +1,10 @@
+[Unit]
+Description=Waybar Daemon
+After=graphical-session.target
+[Service]
+User=rikhter
+ExecStart=/usr/bin/waybar
+Restart=on-failure 
+
+[Install]
+WantedBy=graphical-session.target
