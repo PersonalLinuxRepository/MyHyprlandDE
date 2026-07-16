@@ -1,0 +1,45 @@
+@import url("../colors.css");
+
+#workspaces {
+    background: transparent;
+    padding: 0 6px;
+}
+
+#workspaces button {
+    all: unset;
+    min-width: 34px;
+    min-height: 28px;
+    color: @unnactive_button_color;
+    font-family: "JetBrains Mono";
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    transition: all .25s ease;
+}
+
+#workspaces button.active label {
+    text-shadow: 0 0 6px @shadow_color_text;
+}
+
+#workspaces button {
+    border: none;
+    border-bottom: 2px solid transparent;
+}
+
+#workspaces button.active {
+    color: @workspace_color_text;
+    border-bottom: 2px solid @workspace_color_text;
+    box-shadow:
+        inset 0 -1px 0 @border_bottom_shadow_side_left,
+        0 8px 12px -8px @border_bottom_shadow_side_right;
+}
+
+#window,
+#workspace,
+#clock,
+#network,
+#pulseaudio,
+#battery,
+#tray{
+    margin: 6px 4px;
+}

@@ -1,0 +1,24 @@
+@define-color panel_gradient_start rgba(25, 25, 30, 0.85);
+@define-color panel_gradient_middle rgba(25, 25, 50, 0.65);
+@define-color panel_gradient_end rgba(40, 10, 30, 0.65);
+
+
+@define-color border_color rgba(255, 255, 255, 0.08);
+@define-color border_bottom rgba(9, 9, 10, 0.295);
+@define-color border_bottom_shadow_side_left rgba(255,255,255,.15);
+@define-color border_bottom_shadow_side_right rgba(91,150,255,.7);
+
+@define-color bg_main rgba(14, 24, 35, 0.88);
+@define-color bg_hover rgba(255, 255, 255, 0.08);
+@define-color bg_widget rgba(255, 255, 255, 0.06);
+
+
+@define-color workspace_color_text #52a8ff;
+@define-color main_button_color rgba(255,255,255,0.40);
+@define-color unnactive_button_color rgba(255,255,255,0.40);
+@define-color text_dim rgba(255, 255, 255, 0.4);
+@define-color text_main rgba(255, 255, 255, 0.9);
+@define-color shadow_color_text rgba(77,136,255,.8);
+@define-color active_color_workspace_button #4d88ff;
+@define-color main_color_workspace_button rgba(255,255,255,0.40);
+
