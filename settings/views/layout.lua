@@ -29,3 +29,17 @@ hl.config({
         fullscreen_on_one_column = true,
     },
 })
+
+hl.layer_rule({
+    match = {
+        namespace = "swaync-notification-window"
+    },
+    blur = false
+})
+
+hl.layer_rule({
+    match = {
+        namespace = "waybar"
+    },
+    blur = false
+})

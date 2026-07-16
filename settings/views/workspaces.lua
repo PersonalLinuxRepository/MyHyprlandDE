@@ -66,3 +66,18 @@ hl.window_rule({
   match = {class = ".*"},
   float = true
 })
+
+hl.window_rule({ match = { class = "swaync" }, no_blur = false })
+
+hl.window_rule({
+    match = {
+        class = "^(swaync)$"
+    },
+})
+
+hl.window_rule({
+    match = {
+        class = "^(nautilus)$"
+    },
+     
+})

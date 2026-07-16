@@ -19,3 +19,12 @@ hl.config({
         },
     },
 })
+
+hl.window_rule({
+    match = {
+        class = "^(waybar)$"
+    },
+
+    opacity=0.85,
+    no_blur=true,
+})
