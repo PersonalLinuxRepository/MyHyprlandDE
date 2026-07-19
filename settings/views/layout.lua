@@ -43,3 +43,11 @@ hl.layer_rule({
     },
     blur = false
 })
+
+hl.layer_rule({
+    match = {
+        namespace = "quickshell:hotbar"
+    },
+    blur = true,
+    ignore_alpha = 0.5
+})

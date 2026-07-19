@@ -28,7 +28,7 @@
 
 #workspaces button.active {
     color: @workspace_color_text;
-    border-bottom: 2px solid @workspace_color_text;
+    border-bottom: 1px solid @workspace_color_text;
     box-shadow:
         inset 0 -1px 0 @border_bottom_shadow_side_left,
         0 8px 12px -8px @border_bottom_shadow_side_right;
